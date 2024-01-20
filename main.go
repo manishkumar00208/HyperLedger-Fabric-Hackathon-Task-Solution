@@ -129,7 +129,6 @@ func main() {
 		c.JSON(http.StatusOK, gin.H{"message": "Asset read successfully"})
 	})
 
-	// Add routes for other chaincode methods and API endpoints
 
 	// Produce OpenAPI/Swagger documentation
 	router.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
